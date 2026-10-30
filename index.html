@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luchopolis — Descarga el juego</title>
+  <meta name="description" content="Luchopolis: compra, construye y negocia en La Paz y El Alto. Juego de mesa 3D gratis para Windows y Android, contra la IA o con amigos por Wi-Fi y Bluetooth.">
+  <meta name="author" content="Luis Zeballos">
+  <meta name="theme-color" content="#0d1a30">
+  <meta property="og:title" content="Luchopolis — Compra, construye y negocia en La Paz">
+  <meta property="og:description" content="Juego de mesa 3D gratis para Windows y Android. Creado por Luis Zeballos.">
+  <meta property="og:image" content="img/og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="aguayo" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top">
+      <img src="img/favicon.png" alt="" width="36" height="36">
+      <span>Luchopolis</span>
+    </a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#juego">El juego</a>
+      <a href="#capturas">Capturas</a>
+      <a href="#instalar">Cómo instalar</a>
+    </nav>
+    <a class="btn btn-sm btn-gold" href="#descargar">Descargar</a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="confetti" aria-hidden="true"></div>
+      <div class="hero-text intro">
+        <span class="pill"><i class="flag" aria-hidden="true"></i>Hecho en Bolivia · Gratis</span>
+        <h1 class="title">LUCHO<span>POLIS</span></h1>
+        <p class="lead">Compra el Prado, construye en Sopocachi y cobra alquiler en Calacoto. El juego de mesa de negocios ambientado en <strong>La Paz y El Alto</strong>, con ciudad en 3D, teleféricos y pago en <strong>Bolivianos</strong>.</p>
+        <div class="cta">
+          <a class="btn btn-store btn-win" href="descargas/Luchopolis.exe" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.4v7.1H3V5.5Zm0 13 7.5 1.1v-7H3v5.9Zm8.4 1.2L21 21v-8.4h-9.6v7.1ZM11.4 4.3V11.5H21V3l-9.6 1.3Z"/></svg>
+            <span><small>Descargar para</small>Windows</span>
+          </a>
+          <a class="btn btn-store btn-android" href="descargas/Luchopolis.apk" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 9.5 19.4 6.4a.4.4 0 0 0-.7-.4l-1.8 3.1A11 11 0 0 0 12 8a11 11 0 0 0-4.9 1.1L5.3 6a.4.4 0 1 0-.7.4l1.8 3.1A10.4 10.4 0 0 0 1 18h22a10.4 10.4 0 0 0-5.4-8.5ZM7 15.3a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>
+            <span><small>Descargar para</small>Android</span>
+          </a>
+        </div>
+        <p class="hint">¿Primera vez? Lee <a href="#instalar">cómo instalarlo</a>: necesitas permitir apps de origen desconocido.</p>
+      </div>
+      <div class="hero-art intro intro-late">
+        <div class="screen tilt">
+          <img src="img/cityclose.webp" alt="Tablero 3D de Luchopolis con la ciudad, rascacielos, montañas nevadas y el haz de luz de los dados" width="1280" height="720">
+        </div>
+        <img class="hero-logo float" src="img/logo.webp" alt="Logo de Luchopolis" width="320" height="320">
+        <div class="bill b1" aria-hidden="true">Bs 100</div>
+        <div class="bill b2" aria-hidden="true">Bs 50</div>
+      </div>
+    </section>
+
+    <!-- CIFRAS -->
+    <section class="stats reveal" aria-label="En pocas cifras">
+      <div><b>2–6</b><span>jugadores</span></div>
+      <div><b>3</b><span>niveles de IA</span></div>
+      <div><b>40</b><span>casillas paceñas</span></div>
+      <div><b>3D · 2D</b><span>vistas</span></div>
+      <div><b>Bs</b><span>Bolivianos</span></div>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section class="section" id="juego">
+      <div class="section-head reveal">
+        <span class="kicker">El juego</span>
+        <h2>Una ciudad entera sobre tu mesa</h2>
+        <p>Tira los dados, recorre las zonas de La Paz y El Alto y conviértete en el magnate de la ciudad. Gana quien deja a los demás en quiebra.</p>
+      </div>
+      <div class="features">
+        <article class="feature reveal" style="--c: var(--red)">
+          <div class="ico">🏙️</div>
+          <h3>Ciudad viva en 3D</h3>
+          <p>Rascacielos, plaza con fuente, teleféricos que cruzan el cielo, autos en las calles y el Illimani nevado de fondo.</p>
+        </article>
+        <article class="feature reveal" style="--c: var(--yellow)">
+          <div class="ico">🏗️</div>
+          <h3>Construye y crece</h3>
+          <p>Completa un grupo de color y levanta casas y hoteles con animación de obra: andamios, polvo y todo.</p>
+        </article>
+        <article class="feature reveal" style="--c: var(--green)">
+          <div class="ico">🤝</div>
+          <h3>Negocia en serio</h3>
+          <p>Ofrece terrenos, dinero o salvoconductos. Ves en vivo cuánto das y cuánto recibes antes de cerrar el trato.</p>
+        </article>
+        <article class="feature reveal" style="--c: var(--teal)">
+          <div class="ico">🤖</div>
+          <h3>Rivales con astucia</h3>
+          <p>IA fácil, media y difícil: subastan, hipotecan, negocian y te cobran sin piedad.</p>
+        </article>
+        <article class="feature reveal" style="--c: var(--violet)">
+          <div class="ico">📶</div>
+          <h3>Con amigos, sin internet</h3>
+          <p>Crea una sala por Wi-Fi local o Bluetooth y juega en la misma casa. También pasa-y-juega en un solo dispositivo.</p>
+        </article>
+        <article class="feature reveal" style="--c: var(--coral)">
+          <div class="ico">🦙</div>
+          <h3>Tu ficha, tu estilo</h3>
+          <p>Elige llama, cóndor, ekeko, cabina de teleférico y más. Ponle tu nombre y apodo, sin crear cuentas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPTURAS -->
+    <section class="section section-dark" id="capturas">
+      <div class="section-head reveal">
+        <span class="kicker">Capturas</span>
+        <h2>Así se ve Luchopolis</h2>
+        <p>Toca una imagen para verla en grande.</p>
+      </div>
+      <div class="gallery">
+        <figure class="shot wide reveal"><img src="img/board3d.webp" alt="Haz de luz de los dados sobre la ciudad" loading="lazy" width="1280" height="720"><figcaption>El resultado de los dados se proyecta al cielo</figcaption></figure>
+        <figure class="shot reveal"><img src="img/modes.webp" alt="Selector de modos de juego" loading="lazy" width="1280" height="720"><figcaption>IA, pasa-y-juega, Wi-Fi o Bluetooth</figcaption></figure>
+        <figure class="shot reveal"><img src="img/buy.webp" alt="Título de propiedad de Miraflores" loading="lazy" width="1280" height="720"><figcaption>Compra o manda a subasta</figcaption></figure>
+        <figure class="shot reveal"><img src="img/trade.webp" alt="Ventana para negociar propiedades" loading="lazy" width="1280" height="720"><figcaption>Negocia terrenos por colores</figcaption></figure>
+        <figure class="shot reveal"><img src="img/city.webp" alt="Vista panorámica del tablero con carteles fotográficos" loading="lazy" width="1280" height="720"><figcaption>Carteles con fotos reales de cada zona</figcaption></figure>
+        <figure class="shot reveal"><img src="img/profile.webp" alt="Editor de perfil con ficha de llama en 3D" loading="lazy" width="1280" height="720"><figcaption>Elige tu ficha en 3D</figcaption></figure>
+        <figure class="shot reveal"><img src="img/board2d.webp" alt="Vista clásica 2D del tablero" loading="lazy" width="1280" height="720"><figcaption>Vista 2D para equipos modestos</figcaption></figure>
+        <figure class="shot reveal"><img src="img/victory.webp" alt="Pantalla de victoria" loading="lazy" width="1280" height="720"><figcaption>¡Hasta la última quiebra!</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- AVISO + INSTALACIÓN -->
+    <section class="section" id="instalar">
+      <div class="section-head reveal">
+        <span class="kicker">Cómo instalar</span>
+        <h2>Instálalo en un minuto</h2>
+      </div>
+
+      <div class="notice reveal" role="note">
+        <div class="notice-ico">⚠️</div>
+        <div>
+          <h3>Antes de instalar: es un proyecto independiente</h3>
+          <p>Luchopolis <strong>no tiene licencia ni firma digital oficial</strong> y no está publicado en Microsoft Store ni Google Play. Por eso Windows y Android te mostrarán una advertencia y tendrás que <strong>permitir la instalación de aplicaciones de origen desconocido</strong>. Es normal en juegos independientes: el juego no pide permisos de cuentas ni datos personales.</p>
+        </div>
+      </div>
+
+      <div class="tabs reveal">
+        <div class="tab-bar" role="tablist" aria-label="Sistema">
+          <button class="tab active" role="tab" aria-selected="true" aria-controls="tab-android" id="t-android">Android</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-windows" id="t-windows">Windows</button>
+        </div>
+
+        <div class="tab-panel" id="tab-android" role="tabpanel" aria-labelledby="t-android">
+          <ol class="steps">
+            <li><b>Descarga</b> el archivo <code>Luchopolis.apk</code> desde esta página.</li>
+            <li><b>Ábrelo</b> desde las notificaciones o desde la app <em>Archivos › Descargas</em>.</li>
+            <li>Si aparece <em>«Por tu seguridad, tu teléfono no puede instalar apps desconocidas»</em>, toca <b>Configuración</b> y activa <b>Permitir de esta fuente</b>.</li>
+            <li>Vuelve atrás y toca <b>Instalar</b>. Si Play Protect avisa, elige <b>Más detalles › Instalar de todas formas</b>.</li>
+            <li>¡Listo! Abre <b>Luchopolis</b> desde tu menú de apps. 🎲</li>
+          </ol>
+          <p class="tip">Consejo: cuando termines, puedes volver a desactivar el permiso de <em>apps desconocidas</em> en Ajustes › Aplicaciones › Acceso especial.</p>
+        </div>
+
+        <div class="tab-panel" id="tab-windows" role="tabpanel" aria-labelledby="t-windows" hidden>
+          <ol class="steps">
+            <li><b>Descarga</b> el archivo <code>Luchopolis.exe</code>. Si el navegador dice que «no se descarga habitualmente», abre el menú <b>⋯</b> y elige <b>Conservar</b>.</li>
+            <li><b>Haz doble clic</b> en el archivo descargado.</li>
+            <li>Si aparece <em>«Windows protegió su PC»</em> (SmartScreen), haz clic en <b>Más información</b>.</li>
+            <li>Luego pulsa <b>Ejecutar de todas formas</b>.</li>
+            <li>¡A jugar! No necesita instalación: puedes moverlo a tu escritorio o a una carpeta de juegos. 🎲</li>
+          </ol>
+          <p class="tip">Si tu antivirus lo bloquea por ser un ejecutable sin firma, agrégalo a sus excepciones.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESCARGA -->
+    <section class="section download" id="descargar">
+      <div class="section-head reveal">
+        <span class="kicker">Descargar</span>
+        <h2>Elige tu plataforma</h2>
+        <p>Gratis, sin anuncios y sin crear cuenta.</p>
+      </div>
+      <div class="dl-cards">
+        <article class="dl-card reveal">
+          <div class="dl-ico win">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.4v7.1H3V5.5Zm0 13 7.5 1.1v-7H3v5.9Zm8.4 1.2L21 21v-8.4h-9.6v7.1ZM11.4 4.3V11.5H21V3l-9.6 1.3Z"/></svg>
+          </div>
+          <h3>Windows</h3>
+          <ul>
+            <li>Windows 10 u 11 de 64 bits</li>
+            <li>Tarjeta gráfica con Vulkan o DirectX 12</li>
+            <li>Archivo .exe · ~99 MB</li>
+          </ul>
+          <a class="btn btn-gold btn-block" href="descargas/Luchopolis.exe" download>Descargar .exe</a>
+        </article>
+        <article class="dl-card reveal">
+          <div class="dl-ico android">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 9.5 19.4 6.4a.4.4 0 0 0-.7-.4l-1.8 3.1A11 11 0 0 0 12 8a11 11 0 0 0-4.9 1.1L5.3 6a.4.4 0 1 0-.7.4l1.8 3.1A10.4 10.4 0 0 0 1 18h22a10.4 10.4 0 0 0-5.4-8.5ZM7 15.3a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm10 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>
+          </div>
+          <h3>Android</h3>
+          <ul>
+            <li>Android 7.0 o superior</li>
+            <li>Bluetooth y Wi-Fi local para multijugador</li>
+            <li>Archivo .apk · ~72 MB</li>
+          </ul>
+          <a class="btn btn-gold btn-block" href="descargas/Luchopolis.apk" download>Descargar .apk</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="img/logo.webp" alt="" width="84" height="84" loading="lazy">
+    <p class="made">Creado con ❤️ por <strong>Luis Zeballos</strong></p>
+    <p class="fine">Luchopolis es un juego original e independiente, sin licencia oficial ni afiliación con marcas comerciales de juegos de mesa. Fotos de los carteles: Wikimedia Commons, con licencias libres.</p>
+    <p class="fine">© <span id="year">2026</span> Luis Zeballos</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" aria-label="Cerrar">×</button>
+    <button class="lb-nav prev" aria-label="Anterior">‹</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button class="lb-nav next" aria-label="Siguiente">›</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

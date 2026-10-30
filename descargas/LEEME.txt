@@ -1,0 +1,6 @@
+Coloca aquí los instaladores con estos nombres exactos (la página ya los enlaza):
+
+  Luchopolis.exe   -> versión para Windows
+  Luchopolis.apk   -> versión para Android
+
+Si cambias el tamaño de los archivos, actualiza "~99 MB" y "~72 MB" en index.html.
