@@ -114,6 +114,17 @@ code {
 }
 .btn-gold:hover { box-shadow: 0 9px 0 #c47d22, 0 16px 30px rgba(242, 165, 65, 0.4); }
 .btn-block { width: 100%; padding: 14px 24px; font-size: 1.15rem; }
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
 
 .btn-store {
   padding: 12px 26px 12px 20px;
@@ -126,6 +137,23 @@ code {
 .btn-store small { display: block; font-family: var(--body); font-size: 0.75rem; font-weight: 700; opacity: 0.85; }
 .btn-win { background: linear-gradient(180deg, #2b8cf0, #1666c9); box-shadow: 0 6px 0 #0f4d99, 0 14px 28px rgba(22, 102, 201, 0.35); }
 .btn-android { background: linear-gradient(180deg, #2fc46f, var(--green)); box-shadow: 0 6px 0 #0a7438, 0 14px 28px rgba(18, 161, 80, 0.35); }
+.cta-win-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.cta-sublink {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.18s ease;
+}
+.cta-sublink:hover {
+  color: #fff;
+}
 
 /* ---------- Hero ---------- */
 .hero {
@@ -406,6 +434,8 @@ code {
 /* ---------- Descarga ---------- */
 .dl-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 380px)); justify-content: center; gap: 24px; }
 .dl-card {
+  display: flex;
+  flex-direction: column;
   padding: 30px 28px;
   border-radius: 26px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03));
@@ -427,6 +457,17 @@ code {
 .dl-card h3 { font-family: var(--display); font-size: 1.7rem; margin: 0 0 8px; }
 .dl-card ul { list-style: none; padding: 0; margin: 0 0 24px; color: var(--muted); }
 .dl-card li { padding: 4px 0; }
+.dl-btn-stack {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dl-size {
+  font-size: 0.85em;
+  font-weight: 600;
+  opacity: 0.85;
+}
 
 /* ---------- Pie ---------- */
 .footer {
@@ -552,6 +593,8 @@ code {
   .shot.wide img { height: auto; aspect-ratio: 16 / 9; }
   .stats div { flex: 1 1 calc(50% - 6px); max-width: none; }
   .dl-cards { grid-template-columns: 1fr; }
+  .cta-win-group { width: 100%; }
+  .cta-win-group .btn-store { width: 100%; justify-content: center; }
   .cta .btn-store { width: 100%; justify-content: center; }
   .hero-logo { left: -2%; bottom: -16%; }
   .notice { flex-direction: column; gap: 8px; }
