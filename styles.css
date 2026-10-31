@@ -192,9 +192,8 @@ code {
   width: clamp(84px, 24%, 180px);
   left: -5%;
   bottom: -14%;
-  border-radius: 28%;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
-  border: 4px solid rgba(255, 255, 255, 0.9);
+  /* La insignia ya es redonda y con fondo transparente: solo sombra. */
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.55));
 }
 .float { animation: float 5s ease-in-out infinite; }
 @keyframes float { 50% { transform: translateY(-14px) rotate(-3deg); } }
@@ -436,7 +435,7 @@ code {
   border-top: 1px solid var(--line);
   background: rgba(0, 0, 0, 0.25);
 }
-.footer img { margin: 0 auto 14px; border-radius: 22px; }
+.footer img { margin: 0 auto 14px; filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4)); }
 .made { font-size: 1.2rem; margin: 0 0 10px; }
 .made strong {
   font-family: var(--display);
@@ -447,6 +446,56 @@ code {
   color: transparent;
 }
 .fine { color: var(--muted); font-size: 0.85rem; max-width: 640px; margin: 6px auto; }
+.footer-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px auto 22px;
+}
+.profile-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line);
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.profile-btn svg {
+  flex-shrink: 0;
+}
+.profile-btn:hover {
+  transform: translateY(-2px);
+}
+.profile-btn.wa {
+  background: rgba(37, 211, 102, 0.15);
+  border-color: rgba(37, 211, 102, 0.4);
+  color: #55ef94;
+}
+.profile-btn.wa:hover {
+  background: rgba(37, 211, 102, 0.28);
+  border-color: #25d366;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.25);
+  color: #fff;
+}
+.profile-btn.gh {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #f0f4fc;
+}
+.profile-btn.gh:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: #fff;
+  box-shadow: 0 4px 18px rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
 
 /* ---------- Lightbox ---------- */
 .lightbox {
